@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Labrada:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Spicy+Rice&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2C2C54;
+    --secondary-color:  #474787;
+    --accent-color: #AAABB8;
+    --accent-color-2:  #ECECEC;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid #ccc;
+    column-gap: 8px;
+    align-items: end;
+    background-color: var(--primary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color:#e6d1d1;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: '\2630';
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: '\00d7';
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    background: var(--accent-color);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #141414;
+    padding: 8px 12px;
+    display: block;
+}
+
+nav a:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 4px;
+}
+
+main.grid-container {
+    grid-template-columns: 1fr; 
+  }
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+footer {
+    background: #666;
+    padding: 1rem 10px;
+    text-align: center;
+    color: var(--accent-color-2);
+
+}
+
+main.grid-container {
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-links a:hover {
+    background: #333;
+    border-radius: 50%;
+}
+
+.about {
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-top: 5px solid #2C2C54;
+  
+}
+
+.photo {
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-top: 5px solid #2C2C54;
+    text-align: center;
+
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 4px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-top: 5px solid #2C2C54;
+}
+
+.course h2 {
+    text-align: center;
+    grid-area: course-header;
+    background: #141414;
+    color: #e6d1d1;
+    padding: 10px;
+}
+
+#course-btn {
+    padding: 10px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.course-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.course-buttons button:hover {
+    background: var(--primary-color);
+}
+
+.course-buttons button.active {
+    background: #1a1a3b;
+}
+
+/* Course cards */
+.course-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}

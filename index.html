@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="Course home page.">
+    <meta name="author" content="Brian Timba">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/house-heart-fill.svg" alt="site logo" width="16" height="16">
+        <span>Brian Timba</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav>
+        <ul id="nav-list" class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main class="grid-container">
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Brian Timba. I am from Zimbabwe, currently living in South Africa. I am passionate about web development and eager to enhance my skills through this course. In my free time, I enjoy exploring new technologies, reading tech blogs, and learning new programming languages.
+                I am married and have a wonderful daughter who keeps me motivated to pursue my dreams in the tech industry.
+            </p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/bri-prof.webp" alt="brian profile picture" width="300" height="400">
+        </section>
+        <section class="course">
+            <h2>Web Certificate Course</h2>
+            <div id="course-btn" class="course-buttons">
+            <button id="all-courses">Show All Courses</button>
+            <button id="wdd-courses">WDD Courses</button>
+            <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div id="course-list"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Timbalicious/" target="_blank"><img src="images/fbook.svg" alt="Facebook" width="24" height="24"></a>
+            <a href="https://github.com/btimba/wdd231" target="_blank"><img src="images/github.svg" alt="GitHub" width="24" height="24"></a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24"></a>
+            <a href="https://wa.me/27656629924" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a>
+        </div>
+        <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+        <p>Last Modified:<span id="last-modified"></span> </p>
+    </footer>
+</body>
+</html>

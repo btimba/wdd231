@@ -1,0 +1,51 @@
+@media only screen and (min-width: 38rem) {
+    body {
+        font-size: 1.25em;
+    }
+
+    header,nav,main,footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header""about""photo""course";
+    gap: 1rem;
+    margin: 1rem;
+    }
+
+    h1 {
+        grid-area: header;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    section.about {
+        grid-area: about;
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+    section.photo {
+        grid-area: photo;
+        grid-area: 2/ 2 / 3 / 2;
+    }
+
+    section.course {
+        grid-area: course;
+        grid-area: 3 / 1 / 3 / 3;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}
