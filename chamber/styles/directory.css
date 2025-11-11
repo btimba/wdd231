@@ -27,9 +27,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: .75rem 1rem;
-    position: relative;
     background-color: var(--primary-color);
-    z-index: 100;
+    
 }
 
 .logo-container {
@@ -39,7 +38,7 @@ header {
 }
 
 header img {
-    width: 24px;
+    width: auto;
     height: auto;
 }
 
@@ -59,7 +58,7 @@ nav {
     left: 0;
     width: 100%;
     padding: 10px 0;
-    z-index: 10;
+
 }
 
 .navigation.show {
@@ -178,10 +177,13 @@ h3 {
 .hamburger::after {
     content: '\2630';
     font-size: 2rem;
+    
 }
 
 .hamburger.show::after {
     content: '\00d7';
+    font-size: 2rem;
+   
 }
 
 footer {
