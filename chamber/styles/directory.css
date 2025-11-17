@@ -38,8 +38,9 @@ header {
 }
 
 header img {
-    width: auto;
+    width: 100%;
     height: auto;
+    
 }
 
 nav {
@@ -95,16 +96,17 @@ nav a:hover {
     display: block;
 }
 
-header, nav, main, footer {
+main {
     margin: 0 auto;
     max-width: 900px;
 }
 
 header img {
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: auto;
     padding: 0;
     align-self: center;
+    margin-left: 20px;
 }
 
 h1 {

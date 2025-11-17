@@ -78,6 +78,8 @@ const courses = [
     }
 ]
 
+
+
 const courseList = document.getElementById('course-list');
 const allBtn = document.getElementById('all-courses');
 const wddBtn = document.getElementById('wdd-courses');
