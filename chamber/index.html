@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="Hermanus Chamber of Commerce home page">
+    <meta property="og:title" content="Chamber Home">
+    <meta property="og:description" content="Home page for the Hermanus Chamber of Commerce website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/chamber-logo.png">
+    <meta property="og:url" content="https://btimba.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="../briant.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/directory.css">
+    <link rel="stylesheet" href="./styles/directory-large.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/site-weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+<body>
+      <header>
+    <img src="images/buildings.svg" alt="chamber site logo" width="24" height="24"> 
+    <span class="title">Hermanus Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburger"></button>
+    <nav>
+        <ul id="nav-list" class="navigation">
+            <li><a href="index.html" aria-current="page" >Home</a></li>
+            <li><a href="directory.html" >Directory</a></li>
+            <li><a href="#" >Join</a></li>
+            <li><a href="#" >Discover</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="hero-image">
+            <img src="images/hermanus-market.webp" alt="Hero Image">
+        </div>
+        <section>
+         <div class="local-info">
+            <div >
+                <h3>Events</h3>
+            </div>
+            
+            <div id="current-weather">
+                <h3>Current Weather</h3>
+                <figure>
+                <img id="weather-icon" src="" alt="">
+                </figure>
+                <p><span id="current-temp"></span></p>
+                <p id="weather-desc"></p>
+            </div>
+            <div id="forecast">
+                <h3>Weather Forecast</h3> 
+                <div id="forecast-cards"></div> 
+            </div>
+           <section class="spotlights">
+            <h3>Member Spotlights</h3>
+            <div id="spotlight-container"></div>
+           </section> 
+         </div>
+        </section>   
+    </main>
+    <footer>
+        <div>
+        <p>Hermanus Chamber of Commerce</p>
+        <address>10 Argon Way, Sandbaai, Hermanaus</address>
+        <p>info@hermanus.co.za</p>
+        <p>012-234-1414</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Timbalicious/" target="_blank"><img src="images/fbook.svg" alt="Facebook" width="24" height="24"></a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24"></a>
+            <a href="https://wa.me/27656629924" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a>
+        </div>
+        <div>
+        <p>wdd231 Class Project</p>
+        <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+        <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
