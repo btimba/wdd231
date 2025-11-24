@@ -162,6 +162,28 @@ main.grid-container {
     border-radius: 4px;
 }
 
+dialog {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    box-shadow: #333;
+    width: 90%;
+    max-width: 650px;
+}
+
+::backdrop {
+    background-color: #fff;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid var(--secondary-color);
+}
+
 .course {
     display: flex;
     flex-direction: column;
@@ -191,9 +213,27 @@ main.grid-container {
 .course-buttons {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    gap: 1rem;
     margin-bottom: 1rem;
+}
 
+.filter-btn {
+    background: #141414;
+    color: #f4f4f4;
+    padding: .5rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn:hover{
+    opacity: 0.8;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+    gap: 1rem;
 }
 
 .course-buttons button {
@@ -220,8 +260,12 @@ main.grid-container {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-card:hover {
+    transform: scale(1.05);
 }
 
 .course-card h3 {

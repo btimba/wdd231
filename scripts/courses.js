@@ -76,14 +76,14 @@ const courses = [
         ],
         completed: false
     }
-]
-
-
+];
 
 const courseList = document.getElementById('course-list');
-const allBtn = document.getElementById('all-courses');
-const wddBtn = document.getElementById('wdd-courses');
-const cseBtn = document.getElementById('cse-courses');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const dialog = document.getElementById('course-details');
+//const allBtn = document.getElementById('all-courses');
+//const wddBtn = document.getElementById('wdd-courses');
+//const cseBtn = document.getElementById('cse-courses');
 
 function displayCourses(courseArray) {
     courseList.innerHTML = '';
@@ -92,15 +92,25 @@ function displayCourses(courseArray) {
         const courseCard = document.createElement('div');
         courseCard.classList.add('course-card');
 
-        if (course.completed) {
-            courseCard.style.backgroundColor = '#AAABB8'; // accent color
-            courseCard.style.borderLeft = '6px solid #4CAF50'; // green border for completed courses
-        } else {
-            courseCard.style.backgroundColor = '#FFFFFF'; // white for incomplete courses  
-            courseCard.style.borderLeft = '6px solid #f44336'; // red border for incomplete courses
-        }
+        courseCard.textContent = `${course.subject} ${course.number}`;
 
-        courseCard.innerHTML = `
+       // if (course.completed) {
+        //    courseCard.style.backgroundColor = '#AAABB8'; // accent color
+          //  courseCard.style.borderLeft = '6px solid #4CAF50'; // green border for completed courses
+        //} else {
+        //    courseCard.style.backgroundColor = '#FFFFFF'; // white for incomplete courses  
+        //    courseCard.style.borderLeft = '6px solid #f44336'; // red border for incomplete courses
+        //}
+
+        //Open dialog on click
+        courseCard.addEventListener('click',()=>{
+            showCourseDialog(course)
+        });
+
+        courseList.appendChild(courseCard)
+    });
+}
+     /*  courseCard.innerHTML = `
             <h3>${course.subject} ${course.number}: ${course.title}</h3>
             <p><strong>Credits:</strong> ${course.credits}</p>
             <p><strong>Certificate:</strong> ${course.certificate}</p>
@@ -108,23 +118,79 @@ function displayCourses(courseArray) {
             <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
             <p><strong>Status:</strong>
             <span style="color: ${course.completed ? 'green' : 'red'};">
-                ${course.completed ? 'Completed' : '⏳ In Progress'}
+            ${course.completed ? 'Completed' : '⏳ In Progress'}
             </span>
             </p>
         `;
 
-        courseList.appendChild(courseCard);
+        courseList.appendChild(courseCard);*/
+
+function showCourseDialog(course) {
+        dialog.innerHTML =`
+        <button id ="close-btn">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technology</strong>: ${course.technology.join(', ')}</p>
+        `;
+
+        dialog.showModal();
+
+        dialog.querySelector('#close-btn').onclick = () => dialog.close();
+    }
+
+    //Filter logic
+filterButtons.forEach(btn =>{
+        btn.addEventListener('click',()=>{
+            const filter = btn.dataset.filter;
+
+            if (filter === 'ALL'){
+                displayCourses(courses);
+            }else {
+                const filtered = courses.filter(course => course.subject === filter);
+                displayCourses(filtered);
+            }
     });
-}
+});
 
 // Initial display of all courses
 displayCourses(courses);
-allBtn.addEventListener('click', () => displayCourses(courses));
-wddBtn.addEventListener('click', () => {
-    const wddCourses = courses.filter(course => course.subject === 'WDD');
-    displayCourses(wddCourses);
-});
-cseBtn.addEventListener('click', () => {
-    const cseCourses = courses.filter(course => course.subject === 'CSE');
-    displayCourses(cseCourses);
-});
+
+
+//allBtn.addEventListener('click', () => displayCourses(courses));
+//wddBtn.addEventListener('click', () => {
+//    const wddCourses = courses.filter(course => course.subject === 'WDD');
+//    displayCourses(wddCourses);
+//});
+//cseBtn.addEventListener('click', () => {
+//    const cseCourses = courses.filter(course => course.subject === 'CSE');
+//    displayCourses(cseCourses);
+//});
+
+//const myCertificate = document.querySelector('#course-details');
+//const openModal = document.querySelector('#open-btn');
+//const closeModal = document.querySelector('.close-btn');
+
+//function displayCourseDetails(course) {
+//    myCertificate.innerHTML = "",
+//    myCertificate.innerHTML =`
+//    <button id ="close-btn">❌</button>
+//    <h2>${course.subject} ${course.number}</h2>
+//    <h3>${course.title}</h3>
+//    <p><strong>Credits</strong>: ${course.credits}</p>
+//    <p><strong>Certificate</strong>: ${course.certificate}</p>
+//    <p>${course.description}</p>
+//    <p><strong>Technology</strong>: ${course.technology.join(', ')}</p>
+//    `;
+//    myCertificate.showModal();
+
+//    myCertificate.querySelector('#close-btn').addEventListener('click',() => {
+//        myCertificate.close();
+//    });
+//}
+
+//openModal.addEventListener('click',()=>{
+//    displayCourseDetails(courses[4]);
+//});

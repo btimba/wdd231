@@ -47,12 +47,16 @@
         <section class="course">
             <h2>Web Certificate Course</h2>
             <div id="course-btn" class="course-buttons">
-            <button id="all-courses">Show All Courses</button>
-            <button id="wdd-courses">WDD Courses</button>
-            <button id="cse-courses">CSE Courses</button>
+            <button class="filter-btn"data-filter="All">ALL</button>
+            <button class="filter-btn"data-filter="WDD">WDD</button>
+            <button class="filter-btn"data-filter="CSE">CSE</button>
             </div>
-            <div id="course-list"></div>
+            <div id="course-list" class="course-grid"></div>
         </section>
+       <!-- <button id="open-btn">Web Courses</button>-->
+        <dialog id="course-details">
+        <button id="close-btn">❌</button>    
+        </dialog>
     </main>
     <footer>
         <div class="social-links">
