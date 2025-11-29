@@ -78,7 +78,7 @@ nav {
 nav a[aria-current= "page"] {
     position: relative;
     font-weight: 700;
-    color: var(--accent-color-2);
+    color: #fff;
 }
 
 nav a[aria-current="page"]::after{
@@ -117,13 +117,33 @@ nav a:hover {
 .hamburger.show::after {
     content: '\00d7';
     font-size: 2rem;
-   
 }
 
 .hero-image img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.cta-big {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: inline-block;
+    background-color: #6D6875;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+
+}
+
+.cta-big:hover {
+    background-color: var(--accent-color-2);
 }
 
 main {

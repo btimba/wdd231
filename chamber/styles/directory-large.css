@@ -20,6 +20,13 @@
 
     }
 
+    nav a[aria-current= "page"] {
+    position: relative;
+    font-weight: 700;
+    color: var(--accent-color-2);
+}
+
+
     nav {
         background: none;
     }
