@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Chamber</title>
+    <title>Join Hermanus Chamber</title>
     <meta name="author" content="Brian Timba">
-    <meta name="description" content="Hermanus Chamber of Commerce Join Page">
+    <meta name="description" content="Hermanus Chamber of Commerce Join Page. Site for businesses in the Overburg area to collaborate and share ideas">
     <meta property="og:title" content="Chamber Join">
-    <meta property="og:description" content="Join page for the Hermanus Chamber of Commerce website">
+    <meta property="og:description" content="Join page for the Hermanus Chamber of Commerce website. Site for businesses in the Overburg area to collaborate and share ideas">
     <meta property="og:type" content="website">
     <meta property="og:image" content="../images/chamber-logo.png">
     <meta property="og:url" content="https://btimba.github.io/wdd231/chamber/join.html">
     <link rel="icon" href="../briant.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="./styles/directory.css">
     <link rel="stylesheet" href="./styles/directory-large.css">
@@ -42,14 +45,14 @@
         <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
         <label id="reg-express">Title (min of 7 characters)<input type="text" minlength="7" name="title" title="Your organizational title"></label>
         <label>Email<input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-        <label>Cell Phone<input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+        <label>Cell Phone<input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
         <label>Organization<input type="text" name="organization" required autocomplete="organization" title="The name of your organization"></label>
         <label>Description<textarea name="description" title="your business description"></textarea></label>
 
         <input type="hidden" id="timestamp" name="timestamp">
         </fieldset>
         <fieldset>
-            <legend>Membership Level</legend>
+            <legend>Membership Levels</legend>
             <label><input type="radio" name="membership" value="Non-Profit" required> Non-Profit Membership (Free)</label>
             <label><input type="radio" name="membership" value="Bronze"> Bronze Membership (R500/month)</label>
             <label><input type="radio" name="membership" value="Silver"> Silver Membership (R1000/month)</label>
@@ -59,7 +62,7 @@
     </form>
     </div>
     <section class="membership-cards">
-        <h2>Membership Levels</h2>
+        <h1>Membership Levels</h1>
         <div class="card" data-dialog="np-dialog">
             <h3>Non-Profit Membership</h3>
             <p>Free membership for recognized non-profit organizations.</p>
