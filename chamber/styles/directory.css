@@ -160,13 +160,16 @@ header img {
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #333;
 }
 
 h2 {
-    margin: 10px;
-    color: var(--primary-color);
+    text-align: center;
+    color: #333;
+     font-size: 2em;
+    margin: 0.67em 0;
 }
+
 
 .local-info {
     display: flex;
@@ -325,9 +328,6 @@ footer {
     margin-top: 1rem;   
 }
 
-h1 {
-    color: #333;
-}
 
 /*form styling*/
 
