@@ -6,6 +6,9 @@
     main {
         max-width: 900px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .75rem;
     }
 
     .navigation {
@@ -84,6 +87,12 @@
 
     .social-links img {
         width: 100%;
+    }
+
+    .member-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 2rem;
     }
 
 }   

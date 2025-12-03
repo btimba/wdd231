@@ -183,12 +183,6 @@ h2 {
     margin-top: 10px;
 }
 
-h3 {
-    text-align: center;
-    background: #333;
-    color: #fff;
-}
-
 #directory-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -241,6 +235,89 @@ h3 {
     margin-bottom: 10px;
 }
 
+.membership-cards h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    gap: 1rem;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    transform: translateY(20px);
+    animation: cardFadeIn 0.7s forwards;
+}
+.card:hover {
+    opacity: 1;
+    transform: translateY(0);
+}   
+
+.card:nth-child(2){animation-delay: .2s;}
+.card:nth-child(3){animation-delay: .4s;}
+.card:nth-child(4){animation-delay: .6s;}
+
+@keyframes cardFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.open-dialog-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.open-dialog-button:hover {
+    background-color: var(--accent-color-2);
+}
+
+dialog.modal {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    max-width: 400px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    
+}
+
+dialog.modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close-dialog-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+ .membership-cards {
+    gap: 1rem;
+    display: grid;
+    }
+
 footer {
     background: #666;
     padding: 1rem 10px;
@@ -248,3 +325,76 @@ footer {
     color: #fff;
     margin-top: 1rem;   
 }
+
+h1 {
+    color: #333;
+}
+
+/*form styling*/
+
+.fm-style {
+    margin: 1rem 2%;
+}
+  
+    label {
+      display: block;
+      font-size: .8rem;
+      color: purple;
+      padding-top: .2rem;
+    }
+    h3 {
+      font-size: .9rem;
+      color: #E07A5F;
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
+      background-color: rgb(0, 0, 0);
+    }
+  
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border-radius: 4px;
+      border: 2px solid #555;
+      border-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 250px;
+    }
+  
+    input:required {border: 2px solid #d70000;}
+    input:focus {border: 2px solid black; outline:none;}
+    input:required:valid{border: 2px solid green;}
+  
+    input[type=submit] {
+      border: none;
+      text-align: center;
+      background-color:var(--primary-color);
+      color: white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  
+  input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 2px solid #555;
+    font-size: 1rem;
+    color: #3D405B;
+    resize: vertical;
+  }
+  
