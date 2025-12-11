@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     body {
         font-size: 1.25em;
     }
@@ -95,4 +95,55 @@
         margin-left: 2rem;
     }
 
-}   
+    .place-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .place-card{
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+        "picture title"
+        "picture description"
+        "picture address"
+        "picture button";
+    }
+
+    .learnmore-btn {
+        grid-area: button;
+        background-color: var(--accent-color);
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    .learnmore-btn:hover {
+        background-color: var(--accent-color-2);    
+    }
+
+    #places-section {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+ 
+    }
+    
+    #places-section img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    #places-section img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+}

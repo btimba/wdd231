@@ -1,0 +1,24 @@
+@media only screen and (min-width: 38rem) {
+    
+    #places-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .place-card {
+    grid-template-columns: 180px 1fr;    
+    grid-template-areas: 
+    "picture title"
+    "picture description"
+    "picture location"
+    "picture button"; 
+    align-items: start;
+    }
+
+    .place-card img {
+
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

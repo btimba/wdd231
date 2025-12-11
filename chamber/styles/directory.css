@@ -396,4 +396,101 @@ footer {
     color: #3D405B;
     resize: vertical;
   }
-  
+
+  #places-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width : 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  #places-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+
+  }
+
+.place-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "picture"
+    "description"
+    "address"
+    "button";
+    gap: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.place-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.place-container h1{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    grid-column: 1/-1;
+}
+
+.place-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "picture"
+    "description"
+    "address"
+    "button";
+    align-items: start;
+    gap: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+ .place-card h2 {
+        grid-area: title;
+        margin: 0;
+    }
+
+    .place-card img {
+        grid-area: picture;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+     .place-card p.description {
+        grid-area: description;
+        margin: 0;
+    }
+
+    .place-card p.address {
+        grid-area: address;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .visit-message {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+    }
