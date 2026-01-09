@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <meta name="description" content="Welcome to my home page.">
+    <meta name="author" content="Brian Timba">
+    <link rel="icon" href="briant.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/house-heart-fill.svg" alt="My Logo" width="16" height="16">
+        <span>Brian Home Page</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li ><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Brian Timba. I am currently studying web development and working towards earning my Web Development Certificate. I have a passion for creating user-friendly and visually appealing websites. In my free time, I enjoy exploring new technologies and enhancing my coding skills.</p>
+        </section>
+        <section class="photo">
+            <h2>My Photo</h2>
+            <img src="images/bri-prof.webp" alt="Brian Timba Photo" width="250" height="300">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div id="courses-btn" class="course-btns">
+                <button class="filter-btn" data-filter="ALL" id="all-courses">All Courses</button>
+                <button class="filter-btn" data-filter="WDD" id="wdd-courses">WDD Courses</button>
+                <button class="filter-btn" data-filter="CSE" id="cse-courses">CSE Courses</button>
+            </div>
+            
+            <p id="total-credits"></p>
+            <div id="course-list"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://github.com/btimba" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <p>&copy;<span id="current-year"></span>| Brian Timba</p>
+        <p>Last modified:<span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@media only screen and (min-width: 38rem) {
+    header,main,nav,footer {
+        width: 900px;
+        margin: 0 auto; 
+    }
+
+    header {
+        grid-template-columns: 24px auto ;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    li {
+        flex: 1 1 100%;
+    }
+
+    .navigation {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "about photo"
+            "courses courses"
+            ;
+        gap: 1rem;    
+    }
+
+    h1 {
+        grid-area: header;
+    }
+
+    h2 {
+        font-family: 'Labrada', serif;
+        margin-top: 0;
+        text-align: center;
+        color:#fff;
+        background-color: rgb(5, 5, 5);
+    }
+
+    .about {
+        grid-area: about;
+        background: rgb(190, 187, 187);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .photo {
+        grid-area: photo;
+        text-align: center;
+        background: rgb(190, 187, 187);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .courses {
+        grid-area: courses;
+        display: grid;
+        gap: 1rem;
+    }
+
+    .filter-btn {
+        background: aquamarine;
+        color: rgb(12, 12, 12);
+        border: solid 1px rgb(138, 133, 133);
+        border-radius: 8px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}

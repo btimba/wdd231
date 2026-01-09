@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/*******************************Header Styles **************************/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #333;
+    column-gap: 8px;
+    background: #000;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: #78b3e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    color:steelblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "❌";
+}
+
+.navigation {
+    display: none;
+    margin-top: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+/*******************************Navigation Styles **************************/
+
+nav {
+    background-color: aquamarine;
+
+}
+
+ul {
+    list-style-type:none;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+}
+
+a:hover {
+    background-color: #ddd;
+}
+
+a:active, .current a {
+    background-color: steelblue;
+    color: black;
+}
+
+/*******************************Main Styles **************************/
+
+main {
+    margin-top: 20px;
+}
+
+.main-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    grid-template-columns: 1fr;
+}
+
+.course-card {
+    background: #e2e2e2;
+    color: #000;
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.course-btns {
+        text-align: center;
+        margin-bottom: 15px;
+        background: steelblue;
+        color   : white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+
+/*******************************Footer Styles **************************/
+
+footer {
+    border-top: solid 1px #333;
+    background: #adaaaa;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    display: flex;
+    
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+    border-radius: 20px;
+}
