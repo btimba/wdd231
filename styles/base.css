@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -52,6 +56,10 @@ header img {
 .hamburger::before {
     content: "\2630";
     font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hamburger.show::before {
