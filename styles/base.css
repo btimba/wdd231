@@ -30,7 +30,7 @@ header {
 
 header span {
     font-size: 1.5rem;
-    color: #78b3e2;
+    color: rgb(252, 254, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
@@ -78,7 +78,7 @@ header img {
 /*******************************Navigation Styles **************************/
 
 nav {
-    background-color: aquamarine;
+    background-color: #333;
 
 }
 
@@ -89,18 +89,18 @@ ul {
 a {
     text-decoration: none;
     text-align: center;
-    color: #333;
+    color: #fffdfd;
     padding: 10px 15px;
     display: block;
 }
 
 a:hover {
-    background-color: #ddd;
+    background-color: #78bb0d;
 }
 
 a:active, .current a {
-    background-color: steelblue;
-    color: black;
+    background-color: darkgreen;
+    color: rgb(255, 254, 254);
 }
 
 /*******************************Main Styles **************************/
@@ -118,7 +118,7 @@ main {
 }
 
 .course-card {
-    background: #e2e2e2;
+    background:#f9f9f9;
     color: #000;
     margin: 10px 0;
     padding: 15px;
@@ -126,10 +126,33 @@ main {
     border-radius: 5px;
 }
 
+.course-card.completed {
+    border-color: green;
+    background: #e0ffe0;
+}
+
+.course-card.inprogress {
+    border-color: orange;
+    background: #fff4e0;
+}
+
+.course-status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status-completed {
+    color: #1b5e20;
+}
+
+.status-inprogress {
+    color: #7f0000;
+}
+
 .course-btns {
         text-align: center;
         margin-bottom: 15px;
-        background: steelblue;
+        background: rgb(17, 17, 17);
         color   : white;
         padding: 10px;
         display: flex;

@@ -90,21 +90,14 @@ function displayCourses(courseArray) {
         const courseCard = document.createElement('div');
         courseCard.classList.add('course-card');
 
-        courseCard.textContent = `${course.subject} ${course.number}`;
+        const statusClass = course.completed ? 'status-completed' : 'status-inprogress';
+        const statusText = course.completed ? '(Completed)' : '(⏳In Progress)';
+
         courseCard.innerHTML = `
-                    <h3>${course.subject} ${course.number}</h3>
-                    <span style="color: ${course.completed ? 'green' : 'red'};">
-                    ${course.completed ? 'Completed' : '⏳ In Progress'}
-                    </span>
-                `;
-                
-        if (course.completed) {
-            courseCard.style.backgroundColor = '#AAABB8'; // accent color
-            courseCard.style.borderLeft = '6px solid #4CAF50'; // green border for completed courses
-        } else {
-            courseCard.style.backgroundColor = '#ffffffff'; // white for incomplete courses  
-            courseCard.style.borderLeft = '6px solid #f44336'; // red border for incomplete courses
-        }
+            <h3>${course.subject} ${course.number}: ${course.title} ${statusText}</h3>
+            <span class="course-status ${statusClass}">${statusText}</span>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+        `;
 
         courseList.appendChild(courseCard);
        
