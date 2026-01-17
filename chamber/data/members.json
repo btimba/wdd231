@@ -1,0 +1,79 @@
+{
+  "members": [
+    {
+      "name": "Hermanus Whale Watchers",
+      "address": "32 Harbour Road, Hermanus, Western Cape, South Africa",
+      "phone": "+27 28 312 4957",
+      "website": "https://hermanuswhalewatchers.co.za",
+      "image": "whalewatching.webp",
+      "membership_level": 3
+    },
+    {
+      "name": "Harcourts Real Estate",
+      "address": "169 Main Road, Voelklip, Hermanus, Western Cape, South Africa",
+      "phone": "+27 82 577 1213",
+      "website": "https://www.facebook.com/HarcourtsVoelklip",
+      "image": "harcourts.webp"},
+    {
+      "name": "Electra Max Electrical",
+      "address": "10 Mimosa Street, Hermanus, South Africa",
+      "phone": "082 337 3547",
+      "email": "hello@electramax.co.za",
+      "website": "https://www.electramax.co.za/",
+      "image": "electra-max-electrical.webp"
+    },
+    {
+      "name": "Dutchies restaurant",
+      "address": "Grotto Beach, Hermanus, Western Cape, South Africa",  
+      "phone": "028 314 1392",
+      "email": "info@dutchies.co.za",
+      "website": "https://www.dutchies.co.za/",
+      "image": "dutichies.jpg",
+      "membership_level": 2
+    },
+    {
+      "name": "Jaydee Media - Digital Marketing Agency",
+      "address": "21 Mitchell Street, Checkers Centre, The Station Mall, Hermanus, Western Cape, South Africa",
+      "phone": "0827391022",
+      "email": "design@jaydeemedia.co.za",
+      "website": "https://www.jaydeemedia.co.za", 
+      "image": "jaydee-media.jpg",
+      "membership_level": 1
+    },
+    {
+      "name": "VDS Attorney's",
+      "address": "6 Dirkie Uys street, Hermanus, South Africa",
+      "phone": "0283131050",  
+      "website": "http://www.vandyklaw.co.za/",
+      "image": "vds-attorneys.webp",
+      "membership_level": 1
+    },
+    {
+      "name": "Hermanus Lodge",
+      "address": "8 Fernkloof Road, Hermanus, Western Province, South Africa",
+      "phone": "+27 74 602 2421",
+      "email": "reservations@dcchotels.co.za",
+      "website": "https://www.hermanuslodge.co.za",
+      "image": "hermanus-lodge.webp",
+      "membership_level": 3
+    },
+    {
+      "name": "De Vette Mossel Seafood Restaurant ",
+      "address": "Prawn Flats, on the R43, Voëlklip, Hermanus, South Africa",
+      "phone": "064 552 6627 ( Booking Essential)",
+      "email": "dvmhermanus@gmail.com",
+      "website": "https://hermanus.devettemossel.co.za/",
+      "image": "devette-mossel.webp",
+      "membership_level": 2
+    },
+    {
+      "name": "Jaydee Media Web Design",
+      "address": "23 Mitchell Street - Checkers Centre, CBD, Hermanus, Western Cape, South Africa",
+      "phone": "066 478 0081",
+      "website": "https://www.jdmedia.co.za/",
+      "image": "jd-media.jpg",
+      "membership_level": 1
+    } 
+  ]
+
+}
