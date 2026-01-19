@@ -12,6 +12,10 @@
     --font-family: 'Inter', sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-family);
     line-height: 1.6;
@@ -157,6 +161,13 @@ nav a:hover {
     padding: 15px;
     margin: 10px;
     transition: transform 0.3s;
+}
+
+img.member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .member-card:hover {
