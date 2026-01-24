@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermanus Chamber Home Page</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="Explore the Hermanus Chamber of Commerce and find local businesses and services in the greater Hermanus area.">
+    <meta property="og:description" content="Explore the Hermanus Chamber of Commerce and find local businesses and services in the greater Hermanus area.">
+    <meta property="og:title" content="Hermanus Chamber Home Page">
+    <meta property="og:image" content="chamber/images/herm-arial.webp">
+    <meta property="url" content="https://btimba.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="../briant.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/directory.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>    
+        <img src="images/buildings.svg" alt="Chamber Logo" width="16" height="16">
+        <span>Hermanus Chamber Home</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button> 
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    </header> 
+    <main>
+        <div class="hero">
+            <img src="images/overstr.webp" alt="hero image of Hermanus coastline"> 
+        </div>
+        <section>
+            <h1>Welcome to the Hermanus Chamber of Commerce</h1>
+            <p>Your gateway to local businesses and services in the greater Hermanus area. Explore our directory, join our community, and discover all that Hermanus has to offer!</p>
+        </section>
+         <section class="call-to-action">
+            <h2>Join the Hermanus Chamber Today!</h2>
+            <p>Become a member of our vibrant community and enjoy exclusive benefits, networking opportunities, and support for your business.</p>
+            <a href="join.html" class="join-button">Join Now</a>
+        </section>
+            <div class="local-info">
+            <div class="events">
+                <h2>Events</h2>
+            </div>
+            <div id="current-weather" class="weather">
+              <h2>Current Weather</h2>
+              <img id="weather-icon" src="images/partly-cloudy.svg" alt="weather-icon placeholder" width="100">
+              <p id="weather-desc"></p>
+              <p id="current-temp">Loading...</p>
+            </div>
+            <div class="forecast">
+              <h2>Weather Forecast</h2>
+              <p id="forecast-cards"></p>
+            </div>
+        </div>
+        <section class="spotlight">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-container" id="spotlight-container">
+                <!-- Spotlight businesses will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+      <footer>
+        <div>
+            <p>Hermanus Chamber of Commerce</p>
+            <address>10 Argon Way, Sandbaai, Hermanaus</address>
+            <p>info@hermanus.co.za</p>
+            <p>012-234-1414</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+            <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
