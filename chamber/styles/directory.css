@@ -232,8 +232,33 @@ img.member-image {
         background: #ff7300;
     }
 
+     .local-info h2 {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 1rem 0;
+    }
+
+    .spotlight h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: white;
+        background: #000;
+        
+    }
+
+    div#spotlight-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust the gap value as needed */
+    }
+
     .spotlight-container > div {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     height: 100%;
     background: #fff;
