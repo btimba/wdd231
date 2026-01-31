@@ -124,6 +124,13 @@ main {
     padding: 15px;
     border: 2px rgb(0, 0, 0);
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .course-card.completed {
@@ -159,6 +166,22 @@ main {
         justify-content: space-between;
         border-radius: 5px;
     }
+
+    .dialog {
+        border: solid 2px #333;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        background: #f4f4f4;
+        height: auto;
+    }
+
+    ::backdrop {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+   
 
 /*******************************Footer Styles **************************/
 

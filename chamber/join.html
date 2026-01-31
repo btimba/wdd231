@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermanus Chamber Join Page</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="A page for propective members to apply to join the Hermanus Chamber.">
+    <meta property="og:description" content="A page for propective members to apply to join the Hermanus Chamber.">
+    <meta property="og:title" content="Hermanus Chamber Join Page">
+    <meta property="og:image" content="chamber/images/herm-arial.webp">
+    <meta property="url" content="https://btimba.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="../briant.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/directory.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>    
+        <img src="images/buildings.svg" alt="Chamber Logo" width="16" height="16">
+        <span>Chamber Directory</span>
+        <button id="nav-button" class="hamburger"
+           aria-label="navigation">
+        </button> 
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html" >Directory</a></li>
+            <li><a href="join.html" aria-current="page">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    </header> 
+     <main class="join-menu">
+        <div>
+        <h1>Membership Application Form</h1>
+        <form method="get" action="thankyou.html" class="fm-style">
+        <fieldset>
+            <legend>Applicant Information</legend>
+        <label>First Name<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+        <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+        <label id="reg-express">Title (min of 7 characters)<input type="text" minlength="7" name="title" title="Your organizational title"></label>
+        <label>Email<input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+        <label>Cell Phone<input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+        <label>Organization<input type="text" name="organization" required autocomplete="organization" title="The name of your organization"></label>
+        <label>Description<textarea name="description" title="your business description"></textarea></label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+        </fieldset>
+        <fieldset>
+            <legend>Membership Levels</legend>
+            <label><input type="radio" name="membership" value="Non-Profit" required> Non-Profit Membership (Free)</label>
+            <label><input type="radio" name="membership" value="Bronze"> Bronze Membership (R500/month)</label>
+            <label><input type="radio" name="membership" value="Silver"> Silver Membership (R1000/month)</label>
+            <label><input type="radio" name="membership" value="Gold"> Gold Membership (R2000/month)</label>
+        </fieldset>
+        <input type="submit" value="Join Chamber">
+    </form>
+    </div>
+    <section class="membership-cards">
+        <h2>Membership Levels</h2>
+        <div class="card" data-dialog="np-dialog">
+            <h3>Non-Profit Membership</h3>
+            <p>Free membership for recognized non-profit organizations.</p>
+            <button class="open-dialog-btn">View Benefits</button>
+        </div>
+        <div class="card" data-dialog="bronze-dialog">
+            <h3>Bronze Membership</h3>
+            <p>Affordable option withvisibility.</p>
+            <button class="open-dialog-btn">View Benefits</button>
+        </div>
+        <div class="card" data-dialog="silver-dialog">
+            <h3>Silver Membership</h3>
+            <p>Great boost for growing businesses.</p>
+            <button class="open-dialog-btn">View Benefits</button>
+        </div>
+        <div class="card" data-dialog="gold-dialog">
+            <h3>Gold Membership</h3>
+            <p>Top tier exposure and maximum benefits</p>
+            <button class="open-dialog-btn">View Benefits</button>
+        </div>
+    </section>
+    <dialog id="np-dialog" class="modal">
+        <h3>Non-Profit Membership Benefits</h3>
+        <ul>
+            <li>Free event listings</li>
+            <li>Access to networking events</li>
+            <li>Inclusion in the online directory</li>
+        </ul>
+        <button class="close-dialog-btn" aria-label="close dialog">Close</button>
+    </dialog>
+    <dialog id="bronze-dialog" class="modal">
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+            <li>All Non-Profit benefits</li>
+            <li>Basic website listing</li>
+            <li>Monthly newsletter feature</li>
+        </ul>
+        <button class="close-dialog-btn" aria-label="close dialog">Close</button>
+    </dialog>
+    <dialog id="silver-dialog" class="modal">
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+            <li>All Bronze benefits</li>
+            <li>Enhanced website listing with logo</li>
+            <li>Quarterly social media spotlight</li>
+        </ul>
+        <button class="close-dialog-btn" aria-label="close dialog">Close</button>
+    </dialog>
+    <dialog id="gold-dialog" class="modal">
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+            <li>All Silver benefits</li>
+            <li>Premium website listing with video</li>
+            <li>Monthly social media spotlight</li>
+            <li>Exclusive event sponsorship opportunities</li>
+        </ul>
+        <button class="close-dialog-btn" aria-label="close dialog">Close</button>
+    </dialog>
+    </main>
+      <footer>
+        <div>
+            <p>Hermanus Chamber of Commerce</p>
+            <address>10 Argon Way, Sandbaai, Hermanaus</address>
+            <p>info@hermanus.co.za</p>
+            <p>012-234-1414</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+            <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

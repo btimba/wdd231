@@ -99,6 +99,10 @@ function displayCourses(courseArray) {
             <p><strong>Credits:</strong> ${course.credits}</p>
         `;
 
+        courseCard.addEventListener('click',() =>{
+            displayCourseDetails(course)
+        });
+
         courseList.appendChild(courseCard);
        
     });
@@ -122,5 +126,26 @@ filterButtons.forEach(button =>{
 
 // Initial display of all courses
 displayCourses(courses);
+
+function displayCourseDetails(course) {
+    const dialog = document.getElementById('course-details');
+    dialog.innerHTML = `
+        <h2>${course.subject} ${course.number}: ${course.title}</h2>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        <button id="close-dialog">❌</button>
+    `;
+
+    dialog.showModal();
+    
+
+    document.getElementById('close-dialog').addEventListener('click',() => {
+        dialog.close();
+    });
+
+
+}
 
 
