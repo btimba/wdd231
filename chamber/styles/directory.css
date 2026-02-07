@@ -5,10 +5,10 @@
 }
 
 :root {
-    --primary-color: #ff7300;
-    --secondary-color: #2563eb;
-    --accent-color:#C75D66; 
-    --accent-color-2:#CC6816;
+    --primary-color: rgb(12, 44, 85);
+    --secondary-color: #296374;
+    --accent-color:#629FAD; 
+    --accent-color-2:#EDEDCE;
     --font-family: 'Inter', sans-serif;
 }
 
@@ -36,13 +36,14 @@ header {
 header img {
     width: 44px;
     height: auto;
+   
 }
 
 header span {
     font-family: Labrada,'Times New Roman', Times, serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #000000;
+    color: #fdfdfd;
     letter-spacing: .5px;
 }
 
@@ -77,7 +78,7 @@ nav {
 nav a[aria-current= "page"] {
     position: relative;
     font-weight: 700;
-    color: #000000;
+    color: #6fec09;
 }
 
 nav a[aria-current="page"]::after{
@@ -93,7 +94,7 @@ nav a[aria-current="page"]::after{
 
 nav a {
     text-decoration: none;
-    color:#000000;
+    color:#ffffff;
     padding: 8px 12px;
     display: block;
     transition: background 0.3s;
@@ -132,14 +133,14 @@ nav a:hover {
     text-align: center;
     margin: 20px 0;
     padding: 10px;
-    background: #e2e2e2;
-    color: #000;
+    background: var(--accent-color);
+    color:var(--accent-color-2);
     border-radius: 5px;
 }
 
 .view-buttons button {
-    background:  #ff8c1a;
-    color: #000;
+    background: var(--primary-color);
+    color: var(--accent-color-2);
     border: solid 1px #ccc;
     border-radius: 5px;
     padding: 10px 15px;
@@ -149,7 +150,7 @@ nav a:hover {
 }
 
 .view-buttons button.active {
-    background: var(--accent-color);
+    background: var(--secondary-color);
     font-weight: bold;
 }
 
@@ -281,15 +282,16 @@ div#spotlight-container {
     label {
       display: block;
       font-size: .8rem;
-      color: rgb(49, 17, 49);
+      color: var(--primary-color);
       padding-top: .2rem;
     }
+
     h3 {
       font-size: .9rem;
-      color: #E07A5F;
+      color: #fff;
       margin: 1.5rem 0 .2rem 0;
       border-bottom: 1px solid #eee;
-      background-color: rgb(0, 0, 0);
+      background-color: var(--secondary-color);
     }
   
     input[type=text],
@@ -304,7 +306,7 @@ div#spotlight-container {
       border: 2px solid #555;
       border-color:#555;
       font-size: 1rem;
-      color: #3D405B;
+      color: #000000;
       width: 250px;
     }
   
@@ -337,7 +339,7 @@ div#spotlight-container {
     border-radius: 4px;
     border: 2px solid #555;
     font-size: 1rem;
-    color: #3D405B;
+    color: var(--primary-color);
     resize: vertical;
   }
 
@@ -362,8 +364,8 @@ div#spotlight-container {
 
 .membership-cards h2 {
     text-align: center;
-    color: var(--primary-color);
-    background: #000;
+    color: #fff;
+    background: var(--secondary-color);
     border-radius: 6px;
 }
 
@@ -404,7 +406,7 @@ div#spotlight-container {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
-    color: #0c0c0c;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -455,7 +457,7 @@ dialog.modal::backdrop {
     h2 {
         margin :2rem 0 1rem 0;
         color: #fff;
-        background: #000;
+        background: var(--secondary-color);
         padding: 5px;
     }
 
@@ -508,7 +510,7 @@ dialog.modal::backdrop {
 
     .place-card >button {
         grid-area: button;
-        background: darkgray;
+        background: var(--primary-color);
         color: #fff;
         border: none;
         padding: 0.5rem 1rem;
@@ -517,6 +519,11 @@ dialog.modal::backdrop {
         transition: background 0.3s;
         width: 80%;
         margin: 0.5rem auto 0 auto;
+    }
+
+    .place-card >button:hover {
+        background: var(--accent-color);
+        transform: translateY(-2px);
     }
 
     #places-of-interest img {
