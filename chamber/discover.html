@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermanus Chamber Discover Page</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="A page for showcasing the Hermanus area and its beautiful features.">
+    <meta property="og:description" content="A page for showcasing the Hermanus area, its features like places of interest and demographics.">
+    <meta property="og:title" content="Hermanus Chamber Discover Page">
+    <meta property="og:image" content="chamber/images/overstr.webp">
+    <meta property="url" content="https://btimba.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="../briant.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-medium.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/places.js"></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>    
+        <img src="images/buildings.svg" alt="Chamber Logo" width="16" height="16">
+        <span>Chamber Directory</span>
+        <button id="nav-button" class="hamburger"
+           aria-label="navigation">
+        </button> 
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html" >Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html" aria-current="page">Discover</a></li>
+        </ul>
+    </nav>
+    </header> 
+    <main>
+        <section class="discover-menu">
+            <h1>Discover Hermanus</h1>
+            <p id="visit-message"></p>
+            <article>
+                <h2>About Hermanus</h2>
+                <p>Hermanus is a beautiful coastal town located in the Western Cape province of South Africa. It is renowned for its stunning natural scenery, including rugged cliffs, pristine beaches, and the iconic Walker Bay, which is famous for whale watching. The town has a rich history and vibrant culture, with a variety of art galleries, craft markets, and local festivals that celebrate its heritage. Hermanus is also known for its excellent restaurants, offering fresh seafood and local cuisine. With its mild climate and friendly community, Hermanus is a popular destination for tourists and residents alike.</p>
+            </article>
+            <article>
+                <!--Places of interest to be dynamically populated from data source-->
+                <h2>Places of Interest</h2>
+                <div id="places-of-interest" class="places-cards">      
+                </div>
+            </article>
+            <article>
+                <h2>Demographics</h2>
+                <p>Hermanus has a diverse population with a mix of different cultural backgrounds. The town has seen growth in recent years due to its appeal as a tourist destination and retirement spot. The demographics include a significant number of retirees, young families, and professionals who are attracted to the quality of life offered by the area. The community is known for being welcoming and inclusive, with various events and activities that bring residents together.</p>
+            </article>
+        </section>
+    </main>
+      <footer>
+        <div>
+            <p>Hermanus Chamber of Commerce</p>
+            <address>10 Argon Way, Sandbaai, Hermanaus</address>
+            <p>info@hermanus.co.za</p>
+            <p>012-234-1414</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+            <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

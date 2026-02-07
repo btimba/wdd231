@@ -1,0 +1,110 @@
+@media only screen and (min-width: 48rem) {
+    header,main,nav,footer {
+        width: 1000px;
+        margin: 0 auto; 
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 5px 0 5px 10px;
+        border-bottom: 1px solid var(--accent-color);
+        margin-bottom: 1rem;
+    }
+
+    header img {
+        width: 50px;
+        height: auto;
+        padding-bottom: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    li {
+        flex: 1 1 100%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;
+        justify-content: flex-start;
+        gap: 1.25rem;
+
+    }
+
+    .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    }
+
+    .join-menu {
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .75rem;
+    }
+
+     #places-of-interest {
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 1.5rem;
+    }
+
+    .place-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+       "title title"
+       "picture description"
+       "picture address"
+       "button button";
+    }
+
+    .place-card img {
+        width: 100%;
+        height: auto;
+        grid-area: picture;
+        border-radius: 8px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .place-card h3 {
+        margin: 0.5rem 0;
+        grid-area: title;
+    }
+
+    .place-card p {
+        margin: 0.5rem 0;
+        grid-area: description;
+    }
+
+    .place-card button {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        grid-area: button;
+    }
+
+    .place-cards .place-card {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}    

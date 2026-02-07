@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     header,main,nav,footer {
         width: 1200px;
         margin: 0 auto; 
@@ -173,6 +173,38 @@
     .spotlight-container .spotlight-card:hover {
         transform: translateY(-5px);
     } 
+
+    #places-of-interest {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 1.5rem;
+    }
+
+    .place-card {
+        display:grid;
+        grid-template-columns: 260px 1fr;
+        grid-template-areas: 
+       "title title"
+       "picture description"
+       "picture address"
+       "button button";
+       align-items: start;
+       padding: 0;
+    }
+
+    .place-card img {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        grid-area: picture;
+        border-radius: 8px 0 0 8px;
+        object-fit: cover;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
 
     footer {
         display :grid;
