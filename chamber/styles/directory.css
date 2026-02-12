@@ -59,8 +59,6 @@ nav {
     display: none;
     background-color: var(--secondary-color);
     position: absolute;
-    top: 65px;
-    left: 0;
     width: 100%;
     padding: 10px 0;
 }

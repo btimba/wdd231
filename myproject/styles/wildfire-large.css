@@ -1,0 +1,53 @@
+@media screen and (min-width: 38rem) {
+
+    .hamburger{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        background: none;
+        margin: 0;
+        justify-content: right;
+    }
+
+    nav a {
+        text-decoration: none;
+        color:var(--accent-color);
+        padding: 8px 12px;
+        display: block;
+    }
+
+    nav a:hover {
+        background: var(--secondary-color);
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 15px;
+        justify-content: right;
+        position: static;
+        flex-direction: row;
+        background: none;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    header,main,footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+   
+    #map {
+        height: 300px;
+        overflow: hidden;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+    }
+}

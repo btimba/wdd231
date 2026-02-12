@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Aware Cities</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="Wildfire tracking and city information page for the Hermanus/Overberg area">
+    <meta property="og:title" content="Fire Aware Cities">
+    <meta property="og:description" content="Live veldfire tracking for Hermanus and additional city information.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/chamber-logo.png">
+    <meta property="og:url" content="https://btimba.github.io/wdd231/myproject/wildfire.html">
+    <link rel="icon" href="../fire-aware.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/wildfire.css">
+    <link rel="stylesheet" href="styles/wildfire-large.css">
+    <!-- Scripts -->
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/fire.svg" alt="wildfire site logo" width="24" height="24">
+            <span class="title">Fire Aware Cities</span>
+        </div>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav>
+            <ul id="nav-list" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wildfire.html" aria-current="page">Wildfire Track</a></li>
+                <li><a href="safety.html">Safety Tips</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ALERT BANNER -->
+    <div class="banner">
+        <span><strong>Purpose:</strong> Stay informed about current wildfire conditions,weather and general information about the Hermanus area. Follow all safety guidelines.</span><br>
+        <span><strong>Scenario</strong></span>
+            <p>What is the current wildfire risk in Hermanus?<br>
+                Where to report a fire.<br>
+                Interesting things to do or places to vist
+            </p> 
+    </div>
+    <main class="main-content">
+        <h2>Color Scheme</h2>
+        <p>
+            <strong>Primary color:</strong>Background #0A400C<br>
+            <strong>Accent color:</strong> Header and nav links #FEFAE0;
+        </p>
+        <section>
+            <h3>Typography</h3>
+            <strong>Title,Headings</strong> font-family: 'Inter', sans-serif;
+        </section>
+        <div class="wireframe">
+            <img src="images/wireframe.png" alt="wire-frame">
+        </div>
+    </main>
+      <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+            <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
+

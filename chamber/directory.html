@@ -20,6 +20,7 @@
     <script src="scripts/directory.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>    
@@ -46,19 +47,15 @@
             <div class="events">
                 <h2>Events</h2>
             </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <img src="images/partly-cloudy.svg" alt="Weather icon" class="weather-icon" width="100">
-                <p>temp 22℃</p>
-                <p>conditions Partly Cloudy</p>
-                <p>wind speed 7km/h</p>
-                <p>wind chill 11℃</p>
+             <div id="current-weather" class="weather">
+              <h2>Current Weather</h2>
+              <img id="weather-icon" src="images/partly-cloudy.svg" alt="weather-icon placeholder" width="100">
+              <p id="weather-desc"></p>
+              <p id="current-temp">Loading...</p>
             </div>
             <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <p>Mon - Sunny - 24℃</p>
-                <p>Tue - Cloudy - 22℃</p>
-                <p>Wed - Rainy - 19℃</p>
+              <h2>Weather Forecast</h2>
+              <p id="forecast-cards"></p>
             </div>
         </div>
         <section class="view-buttons">

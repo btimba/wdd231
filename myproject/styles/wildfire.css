@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0A400C;
+    --secondary-color: #819067;
+    --accent-color:#FEFAE0; 
+    --accent-color-2:#B1AB86;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid #ccc;
+    background-color:var(--primary-color);
+    
+}
+
+header img {
+    width: 25px;
+    height: auto;
+    align-self: center;
+}
+
+header span {
+    font-family: 'Labrada', 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: .5px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: end;
+}
+
+.hamburger::after {
+    content: '\2630';
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: '\00d7';
+}
+
+.navigation {
+    flex-direction: column;
+    list-style: none;
+    display: none;
+    color: var(--accent-color);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+.banner {
+    margin: 1.5rem;
+    padding: 1rem;
+
+}
+
+    .wireframe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    #map-section {
+        margin:2rem;
+        padding: 1rem;
+    }
+
+    footer {
+    text-align: center;
+    padding: 1rem;
+    color: silver;
+    background-color: rgb(20, 20, 20);
+    margin-top: 2rem;
+    }
+
+    .socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    }
+
+    .socials a:hover {
+    color: var(--accent-color-2);
+    }
+
+
