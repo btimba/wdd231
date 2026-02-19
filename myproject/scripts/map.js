@@ -11,3 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 .bindPopup("Hermanus - No active fires reported.")
                 .openPopup();
         });
+
+        

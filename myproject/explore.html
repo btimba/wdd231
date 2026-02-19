@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Towns|Overstrand Connect</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="Explore towns in the Overstrand region including Hermanus. View population, coordinates, and regional data powered by GeoDB API..">
+    <meta property="og:description" content="Live city data for Hermanus and surrounding towns.">
+    <meta property="og:title" content="Explore Towns|Overstrand Connect">
+    <meta property="og:image" content="chamber/images/herm-arial.webp">
+    <meta property="url" content="https://btimba.github.io">
+    <link rel="icon" href="../fire-aware.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/over.css">
+    <link rel="stylesheet" href="styles/over-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="scripts/over.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/explore.js"></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <div class="alert-banner" role="status">
+        <p>Fire risk status: <strong id="fire-status">Moderate</strong> in the greater Hermanus area.
+        </p>
+    </div>
+<header>
+      <img src="images/fire.svg" alt="Site Logo" width="16" height="16">
+        <span>Overstrand Connect</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button> 
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="fire-aware.html">Fire-Awareness</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="explore-page">
+    <section class="page-intro">
+        <h1>Explore Towns in the Overstrand Region</h1>
+        <p>Discover live city data for Hermanus and surrounding towns. View population, coordinates, and regional insights powered by GeoDB API.</p>
+    </section>
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Search for a town..." aria-label="Search for a town">
+    </div>
+    <div id="cities-container" class="cities-container">    
+        <!-- City cards will be dynamically inserted here -->
+         <div class="loading">Loading city data...
+            <div class="spinner"></div>
+         </div>
+    </div>
+    <div id="cityModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cityModal" aria-describedby="modal-body">
+    <div class="modal-content">
+        <button id="closeModal" class="close-btn" aria-label="Close modal">&times;</button>
+        <div id="modal-body">
+            <!-- Modal content will be dynamically inserted here -->    
+        </div>  
+    </div>   
+    </div>
+</main>
+<footer>
+        <div>
+            <p>Overstrand Connect</p>
+            <address>10 Argon Way, Sandbaai, Hermanaus</address>
+            <p>info@hermanus.co.za</p>
+            <p>012-234-1414</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+            <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire-Awareness|Overstrand Connect</title>
+    <meta name="author" content="Brian Timba">
+    <meta name="description" content="Fire awareness information prevention tips, and emergency contacts for the Hermanus and Overstrand region.">
+    <meta property="og:description" content="Stay informed about veld fire safety in the Overstrand region.">
+    <meta property="og:title" content="Fire Awareness|Overstrand Connect">
+    <meta property="og:image" content="chamber/images/herm-arial.webp">
+    <meta property="url" content="https://btimba.github.io">
+    <link rel="icon" href="../fire-aware.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/over.css">
+    <link rel="stylesheet" href="styles/over-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Labrada:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="scripts/over.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/fire-aware.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <div class="alert-banner" role="status">
+        <p>Fire risk status: <strong id="fire-status">Moderate</strong> in the greater Hermanus area.
+        </p>
+    </div>
+<header>
+      <img src="images/fire.svg" alt="Site Logo" width="16" height="16">
+        <span>Fire Awareness</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button> 
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="fire-aware.html">Fire-Awareness</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="fire-page">
+    <section class="page-intro">
+        <h1>Understanding Veld Fires</h1>
+        <p> Veld fires are uncontrolled fires that spread rapidly through grass,
+            shrubs, and vegetation. During hot and dry seasons in the Overstrand
+            region, the risk increases significantly..
+        </p>
+    </section>
+    <section class="risk-section">
+        <h2>Current Fire Risk Status</h2>
+
+        <div class="risk-grid">
+            <div class="risk-card low">
+                <h3>Low</h3>
+                <p>Current conditions indicate a low fire risk. Continue to stay informed and follow local guidelines.</p>
+            </div>
+            <div class="risk-card moderate">
+                <h3>Moderate</h3>
+                <p>Current conditions indicate a moderate fire risk. Stay alert and follow local guidelines.</p>
+            </div>
+            <div class="risk-card high">
+                <h3>High</h3>
+                <p>Fire risk is high. Avoid outdoor activities and report any signs of fire immediately.</p>
+            </div>
+            <div class="risk-card extreme">
+                <h3>Extreme</h3>
+                <p>Extreme fire risk. Stay indoors, avoid all outdoor activities, and follow emergency instructions.</p>
+            </div>   
+        </div>
+    </section>
+        <div class="fire-info">
+    <div class="fire-left">
+        <section class="fire-tips">
+            <h2>Fire Prevention Tips</h2>
+            <ul>
+                <li>Avoid open flames during high-risk periods.</li>
+                <li>Do not discard cigarettes butts or matches outdoors.</li>
+                <li>Keep your property clear of dry vegetation.</li>
+                <li>Report any signs of fire immediately to local authorities.</li>
+            </ul>
+        </section>
+        <section class="emergency-contacts">
+            <h2>Emergency Contacts</h2>
+            <ul>
+                <li><strong>Local Fire Department:</strong> 012-345-6789</li>
+                <li><strong>Emergency Services:</strong> 112</li>
+                <li><strong>Local Police:</strong> 012-987-6543</li>
+            </ul>
+        </section>
+    </div>
+    <section class="form-section">
+        <h2>Report a Fire</h2>
+        <form action="form-action.html" method="get">
+            <fieldset>
+                <legend>Fire Report Form</legend>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="location">Fire Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="severity">Severity Level:</label>
+            <select id="severity" name="severity"  required>
+                <option value="">Select severity</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+                <option value="extreme">Extreme</option>
+            </select>             
+            </fieldset>           
+            <button type="submit" class="btn-fire">Report Fire</button>
+        </form> 
+    </section>
+        </div>
+</main>
+<footer>
+        <div>
+            <p>Overstrand Connect</p>
+            <address>10 Argon Way, Sandbaai, Hermanaus</address>
+            <p>info@hermanus.co.za</p>
+            <p>012-234-1414</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/timbalicious" target="_blank">
+                <img src="images/fbook.svg" alt="Facebook" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-timba-3ba9621b8/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://wa.me/27656629924" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="48" height="48">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p><span id="current-year"></span>&copy; Brian Timba-Zimbabwe</p>
+            <p>Last Modified:<span id="last-modified"></span></p>
+        </div>
+</footer>
+</body>
+</html>

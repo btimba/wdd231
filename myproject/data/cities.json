@@ -1,0 +1,123 @@
+ {
+  "city": [
+    {
+      "wikiDataId": "Q1185115",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "population": 433688,
+      "latitude": -33.9258,
+      "longitude": 18.4232
+    },
+    
+    {
+      "wikiDataId": "Q1185115",
+      "city": "Stellenbosch",
+      "country": "South Africa",
+      "population": 155000,
+      "latitude": -33.9328,
+      "longitude": 18.8603
+    },
+    { 
+      "city": "Bellville", 
+      "distance": 20.421, 
+      "population": 112507, 
+      "latitude": -33.8943, 
+      "longitude": 18.6294, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q816041" 
+    },
+    { 
+      "city": "Durbanville", 
+      "distance": 28.514, 
+      "population": 54286, 
+      "latitude": -33.8333, 
+      "longitude": 18.6500, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q1266904" 
+    },
+    { 
+      "city": "Somerset West", 
+      "distance": 51.245, 
+      "population": 55166, 
+      "latitude": -34.0757, 
+      "longitude": 18.8433, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q2101683" 
+    },
+    { 
+      "city": "Strand", 
+      "distance": 52.812, 
+      "population": 55558, 
+      "latitude": -34.1150, 
+      "longitude": 18.8290, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q2101692" 
+    },
+    { 
+      "city": "Paarl", 
+      "distance": 62.108, 
+      "population": 197735, 
+      "latitude": -33.7225, 
+      "longitude": 18.9558, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q1012351" 
+    },
+    { 
+      "city": "Malmesbury", 
+      "distance": 65.877, 
+      "population": 35897, 
+      "latitude": -33.4608, 
+      "longitude": 18.7272, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q1887640" 
+    },
+    { 
+      "city": "Wellington", 
+      "distance": 72.433, 
+      "population": 55543, 
+      "latitude": -33.6394, 
+      "longitude": 19.0103, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q2302302" 
+    },
+    { 
+      "city": "Franschhoek", 
+      "distance": 81.564, 
+      "population": 17576, 
+      "latitude": -33.9114, 
+      "longitude": 19.1200, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q1011883" 
+    },
+    { 
+      "city": "Grabouw", 
+      "distance": 82.201, 
+      "population": 30337, 
+      "latitude": -34.1500, 
+      "longitude": 19.0167, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q2163901" 
+    },
+    { 
+      "city": "Hermanus", 
+      "distance": 100.00, 
+      "population": 32769, 
+      "latitude": -34.4167, 
+      "longitude": 19.2333, 
+      "region": "Western Cape", 
+      "country": "South Africa",
+      "wikiDataId": "Q1613480" 
+    }
+  ]
+ }
+
+ 
