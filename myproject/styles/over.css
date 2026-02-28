@@ -301,6 +301,15 @@ nav {
     background: #ccc;
 }
 
+.form-section {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: none;
+    gap: 1rem;
+}
 
 .fire-info {
     display: grid;
